@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bio Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🤖 AI Bio Generator</h1>
+
+        <p>Create professional bios in seconds using AI</p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name">
+
+        <input
+            type="text"
+            id="profession"
+            placeholder="Enter your profession">
+
+        <input
+            type="text"
+            id="hobbies"
+            placeholder="Enter your hobbies">
+
+        <select id="platform">
+            <option>LinkedIn</option>
+            <option>Instagram</option>
+            <option>Portfolio</option>
+            <option>Twitter</option>
+        </select>
+
+        <select id="tone">
+            <option>Professional</option>
+            <option>Friendly</option>
+            <option>Creative</option>
+            <option>Funny</option>
+        </select>
+
+        <button onclick="generateBio()">
+            🚀 Generate Bio
+        </button>
+
+        <div id="loading"></div>
+
+        <div id="result"></div>
+
+        <button id="copyBtn">
+            📋 Copy Bio
+        </button>
+
+        <div id="counter"></div>
+        <button onclick="clearForm()">
+            🗑️ Clear
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
